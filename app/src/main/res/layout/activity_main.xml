@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="25dp"
+        android:text="Quiz Application"
+        android:textAlignment="center"
+        android:textColor="@color/material_dynamic_neutral40"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="159dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/icon"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Choose Topic"
+        android:textColor="#6699CC"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/firstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/topic"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:weightSum="4">
+        <LinearLayout
+            android:id="@+id/javalayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/new_background_resource">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/newjava"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Java"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/androidlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/new_background_resource">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/newandroid"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Android"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+    </LinearLayout>
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/secondlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/firstlayout"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:weightSum="4">
+            <LinearLayout
+                android:id="@+id/kotlinlayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/new_background_resource">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/kotlin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Kotlin"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/flutterlayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="20dp"
+                android:orientation="vertical"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/new_background_resource">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/flutter"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Flutter"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+</LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startquiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lets Begin!"
+        android:textColor="#6699CC"
+        android:layout_below="@id/secondlayout"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:background="@drawable/new_back_ground_01"/>
+</LinearLayout>
